@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   Author: Jacob Moodie
+   Date:  09/26/2025 
+   
+   Filename: portfolio_index.html
+-->
+<meta charset="utf-8"/>
+<meta name="keywords" content="Jacob Moodie, Portfolio, Home, About me"/>
+<meta name="description" content="My portfolio home page/About me."/>
+<title> Portfolio - Jacob Moodie </title>
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="main.css">
+<script type="module" src="./js/script.js"></script>
+<link rel="icon" href="Images/Me in tux.png">
+
+
+</head>
+<body>
+    <div id="wrap">
+    <header>
+        <a class="logo" href="portfolio_index.html">JM</a>
+        <h1> Check out my Projects.</h1>
+        <nav>
+            <ul>
+                <li><a href="portfolio_resume.html">Resume</a></li>
+                <li><a href="portfolio_projects.html">Projects</a></li>
+                <li><a href="portfolio_contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   <section>
+      <article>
+         <h1 id="projects">Lineage</h1>
+         <style>
+         h1#projects {    
+            border-radius: 10px;
+            padding-bottom: 5px;
+            background-color: #1B4745;
+            color: white;
+            padding-left: 10px;
+            padding-top: 5px;
+            
+        }
+        </style>
+          <div class="filters" aria-label="Project filters">
+            <button type="button" id="allButton" data-filter="all">All</button>
+            <button type="button" id="vbaButton" data-filter="vba">VBA Code</button>
+            <button type="button" id="excelButton" data-filter="excel">Excel</button>
+            <button type="button" id="R4WMS" data-filter="r4 wms">R4 WMS</button>
+        </div>
+  <div id="projectPoster"></div>
+      </article>
+   </section>
+
+   <form id="projectForm">
+
+  <fieldset>
+    <legend>Add New Project</legend>
+
+    <div class="formRow">
+      <label for="projectTitle">Project Title</label>
+      <input type="text" id="projectTitle" name="projectTitle" required>
+    </div>
+
+    <div class="formRow">
+      <label for="projectDescription">Description</label>
+      <textarea id="projectDescription" name="projectDescription" required></textarea>
+    </div>
+
+    <div class="formRow">
+      <label for="projectTech">Technologies (comma separated)</label>
+      <input type="text" id="projectTech" name="projectTech" required>
+    </div>
+
+    <div class="formRow">
+      <label for="projectLink">Project Link</label>
+      <input type="url" id="projectLink" name="projectLink" required>
+    </div>
+
+    <div class="formRow">
+      <label for="projectImage">Image Upload</label>
+      <input type="file" id="projectImage" name="projectImage" accept="image/*" required>
+    </div>
+    
+    <input type="hidden" name="csrfToken" value="">
+    <button type="submit">Add Project</button>
+  </fieldset>
+</form>
+<form id="deleteProjectForm">
+  <fieldset>
+    <legend>Delete Saved Project</legend>
+
+    <div class="formRow">
+      <label for="deleteProjectTitle">Project Title</label>
+      <input type="text" id="deleteProjectTitle" required>
+    </div>
+
+    <button type="submit">Delete Project</button>
+  </fieldset>
+</form>
+    <footer>
+        <a href="#top" class="to-top">↑</a>
+        <address>
+        3330 Cimmaron Court, Plover, WI, 54467
+        </address>  
+    </footer>
+    </div>
+</body>

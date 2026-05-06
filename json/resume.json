@@ -1,0 +1,21 @@
+[
+  {
+    "company": "Lineage Logistics",
+    "position": "Warehouse Supervisor",
+    "responsibilities": [
+      "Lead nightly operations, supervising and directing 20–30 employees across multiple departments.",
+      "Ensure workflow efficiency, accuracy, and compliance with safety standards.",
+      "Train and mentor new employees on processes and best practices.",
+      "Implement process improvements that reduce errors and increase productivity."
+    ]
+  },
+  {
+    "company": "Menards",
+    "position": "Cart Pusher/Cashier",
+    "responsibilities": [
+      "Maintained store organization and ensured customer convenience by managing carts and assisting at checkout.",
+      "Provided customer service and handled transactions efficiently.",
+      "Trained new employees on responsibilities and procedures."
+    ]
+  }
+]
