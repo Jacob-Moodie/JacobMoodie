@@ -113,9 +113,14 @@ app.get("/manifest.json", (req, res) => {
   res.sendFile(path.join(__dirname, "manifest.json"));
 });
 
-// Serves the service worker from the root so its scope covers the whole app.
+// Serves the service worker with headers that browsers and proxies require.
+// Cache-Control: no-cache forces the browser to re-validate the file on every load
+// so it always picks up new versions immediately instead of serving a stale copy.
+// Service-Worker-Allowed explicitly grants scope over the entire origin.
 app.get("/sw.js", (req, res) => {
   res.setHeader("Content-Type", "application/javascript");
+  res.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+  res.setHeader("Service-Worker-Allowed", "/");
   res.sendFile(path.join(__dirname, "sw.js"));
 });
 
