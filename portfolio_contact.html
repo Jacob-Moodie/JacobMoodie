@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   Author: Jacob Moodie
+   Date: 09/26/2025
+   Filename: portfolio_index.html
+-->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1B4745">
+<meta name="keywords" content="Jacob Moodie, Portfolio, Contact, About me" />
+<meta name="description" content="My portfolio contact page/About me." />
+<title>Portfolio Contact - Jacob Moodie</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="main.css">
+<script type="module" src="./js/script.js"></script>
+<script type="module" src="./js/pwa.js"></script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+
+</head>
+
+<body>
+
+<!-- Install banner: hidden until the browser fires beforeinstallprompt in pwa.js -->
+<div id="installBanner" hidden>
+  <p>Add this portfolio to your home screen for quick access!</p>
+  <button type="button" id="installBtn">Install App</button>
+  <button type="button" id="dismissInstall">Dismiss</button>
+</div>
+
+   <div id="wrap">
+   <header>
+      <a class="logo" href="portfolio_index.html">JM</a>
+         <h1> Get in touch with me.</h1>
+         <nav>
+               <ul>
+                  <li><a href="portfolio_resume.html">Resume</a></li>
+                  <li><a href="portfolio_projects.html">Projects</a></li>
+                  <li><a href="portfolio_contact.html">Contact</a></li>
+               </ul>
+         </nav>
+      </header>
+
+
+      <section>
+         <article id="myContact">
+            <p><strong>Email:</strong><a href="mailto:Jacobmoodie@live.com">Jacobmoodie@live.com</a></p>
+            <p><strong>Phone:</strong><a href="tel:7155702640">715-570-2640</a></p>
+         </article>
+         <form id="contactMe" action="">
+            <fieldset id="businessInfo">
+               <legend>Buisiness Information</legend>
+               <div class="formRow">
+                  <label for="company">Company</label>
+                  <input name="company" id="company" type="text" required/>
+               </div>
+               <div class="formRow">
+                  <label for="firstName">First Name</label>
+                  <input name="firstName" id="firstName" type="text" required/> 
+               </div>
+               <div class="formRow">
+                  <label for="lastName">Last Name</label>
+                  <input name="lastName" id="lastName" type="text" required/>
+               </div>
+               <div class="formRow">
+                  <label for="city">City</label>
+                  <input name="city" id="city" type="text" placeholder="Plover"/>
+               </div>
+               <div class="formRow">
+                  <label for="state">State</label>
+                  <input name="state" id="state" type="text" placeholder="Wisconsin"/> 
+               </div>
+               <div class="formRow">
+                  <label for="zip">Zip</label>
+                  <input name="zip" id="zip" type="text" placeholder="00000"/>
+               </div>
+               <div class="formRow">
+                  <label for="phone">Phone Number</label>
+                  <input name="phone" id="phone" type="text" placeholder="000-000-0000"/>
+               </div>
+               <div class="formRow">
+                  <label for="email">Email Address</label>
+                  <input name="email" id="email" type="email" required />
+               </div>
+            </fieldset>
+            <fieldset id="questions">
+               <div class="formRow">
+                  <label for="questionsBox">Let me know if you have any other questions!</label>
+                  <input name="questionsBox" id="questionsBox" type="text" required/>
+               </div>
+               <input type="hidden" name="csrfToken" value="">
+            </fieldset>
+            <div id="submit">
+               <input type="submit" value="Submit"/>
+               <button type="button" id="useLocation">Use My Location</button>
+            </div>
+         </form>
+      </section>
+    <footer>
+        <a href="#top" class="to-top">↑</a>
+        <address>
+        3330 Cimmaron Court, Plover, WI, 54467
+        </address>  
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   Author: Jacob Moodie
+   Date:  09/26/2025 
+   
+   Filename: portfolio_index.html
+-->
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#1B4745">
+<meta name="keywords" content="Jacob Moodie, Portfolio, Home, About me"/>
+<meta name="description" content="My portfolio home page/About me."/>
+<title> Portfolio Resume - Jacob Moodie </title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="normalize.css">
+<link rel="stylesheet" href="main.css">
+<script type="module" src="./js/script.js"></script>
+<script type="module" src="./js/pwa.js"></script>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+
+</head>
+<body>
+
+<!-- Install banner: hidden until the browser fires beforeinstallprompt in pwa.js -->
+<div id="installBanner" hidden>
+  <p>Add this portfolio to your home screen for quick access!</p>
+  <button type="button" id="installBtn">Install App</button>
+  <button type="button" id="dismissInstall">Dismiss</button>
+</div>
+
+   <div id="wrap">
+       <header>
+         <a class="logo" href="portfolio_index.html">JM</a>
+        <h1> Jacob Moodie.</h1>
+        <nav>
+            <ul>
+                <li><a href="portfolio_resume.html">Resume</a></li>
+                <li><a href="portfolio_projects.html">Projects</a></li>
+                <li><a href="portfolio_contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   <section id="resume">
+      <article>
+         <h2>Lineage Logistics - Warehouse Supervisor</h2>
+         <ul>
+            <li>Lead nightly operations, supervising and directing 20–30 employees across multiple departments.</li>   
+            <li>Ensure workflow efficiency, accuracy, and compliance with safety standards.</li>  
+            <li>Train and mentor new employees on processes and best practices.</li>  
+            <li>Implement process improvements that reduce errors and increase productivity.</li>  
+         </ul>
+         <h2>Menards - Cart Pusher/Cashier</h2>
+           <ul>
+            <li>Maintained store organization and ensured customer convenience by managing carts and assisting at checkout.</li>   
+            <li>Provided customer service and handled transactions efficiently.</li>  
+            <li>Trained new employees on responsibilities and procedures.</li>  
+         </ul>
+      </article>
+   </section>
+   <aside>
+      <section id="Education">
+         <h2>Education</h2>
+         <p>Northcentral Technical College - Software Development.</p>
+         <p>Stevens Point Area School High - High School Diploma.</p>
+      </section>
+      <section id="References">
+         <h2>References</h2>
+            <p><strong>Jeremy File</strong> (715) 697-0695</p>
+            <p><strong>Timothy Hofer:</strong>  ( 920) 658-3031</p>
+      </section>
+   </aside>
+    <footer>
+      <a href="#top" class="to-top">↑</a>
+        <address>
+        3330 Cimmaron Court, Plover, WI, 54467
+        </address>  
+    </footer>
+   </div>
+</body>
